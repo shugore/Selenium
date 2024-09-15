@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.LoginScreen;
 
-public class Login extends BaseClass{
+public class Login3 extends BaseClass{
 	
 	LoginScreen LoginObjects;
 	

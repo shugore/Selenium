@@ -6,7 +6,8 @@
       <class name="testCases.Login">
         <methods>
           <include name="setUp"/>
-          <include name="test"/>
+          <include name="Test"/>
+          <include name="TearDown_AM"/>
           <include name="before"/>
         </methods>
       </class> <!-- testCases.Login -->

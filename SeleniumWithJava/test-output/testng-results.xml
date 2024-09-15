@@ -2,23 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-06T00:51:26 IST" name="Suite" finished-at="2024-08-06T00:51:31 IST" duration-ms="5674">
+  <suite started-at="2024-09-15T23:38:43 IST" name="Suite" finished-at="2024-09-15T23:39:02 IST" duration-ms="19016">
     <groups>
     </groups>
-    <test started-at="2024-08-06T00:51:26 IST" name="Test" finished-at="2024-08-06T00:51:31 IST" duration-ms="5674">
+    <test started-at="2024-09-15T23:38:43 IST" name="Test" finished-at="2024-09-15T23:39:02 IST" duration-ms="19016">
       <class name="testCases.Login">
-        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Login@6187d1f5]" started-at="2024-08-06T00:51:25 IST" name="before" finished-at="2024-08-06T00:51:26 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Login@5f0e9815]" started-at="2024-09-15T23:38:42 IST" name="before" finished-at="2024-09-15T23:38:43 IST" duration-ms="702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.Login@6187d1f5]" started-at="2024-08-06T00:51:26 IST" name="setUp" finished-at="2024-08-06T00:51:31 IST" duration-ms="5582" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.Login@5f0e9815]" started-at="2024-09-15T23:38:43 IST" name="setUp" finished-at="2024-09-15T23:38:52 IST" duration-ms="8692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testCases.Login@6187d1f5]" started-at="2024-08-06T00:51:31 IST" name="test" finished-at="2024-08-06T00:51:31 IST" duration-ms="15" status="PASS">
+        <test-method signature="Test()[pri:0, instance:testCases.Login@5f0e9815]" started-at="2024-09-15T23:38:52 IST" name="Test" finished-at="2024-09-15T23:38:57 IST" duration-ms="5094" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="TearDown_AM(org.testng.ITestResult)[pri:0, instance:testCases.Login@5f0e9815]" started-at="2024-09-15T23:38:57 IST" name="TearDown_AM" finished-at="2024-09-15T23:39:02 IST" duration-ms="5119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test status=SUCCESS method=Login.Test()[pri:0, instance:testCases.Login@5f0e9815] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown_AM -->
       </class> <!-- testCases.Login -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

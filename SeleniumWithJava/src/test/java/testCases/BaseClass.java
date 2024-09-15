@@ -36,6 +36,7 @@ public class BaseClass {
 	public static ExtentReports reports;
 	public static ExtentTest Loggertest;
 	public static ExtentSparkReporter extent;
+	
 
 	public static String dateOnly() {
 
@@ -52,16 +53,16 @@ public class BaseClass {
 	@BeforeSuite
 	public void before() throws Exception {
 
-		File dir1 = new File((System.getProperty("user,dir") + "/target/Reports/" + dateOnly()));
+		File dir1 = new File((System.getProperty("user.dir") + "/target/Reports/" + dateOnly()));
 
 		dir1.mkdir();
 
 		Date d = new Date();
 
-		String fileName = "OrangeHRM_Report" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+		String fileName = "OrangeHRM_Report_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
 		extent = new ExtentSparkReporter(
-				new File((System.getProperty("user,dir") + "/target/Reports/" + dateOnly() + "/" + fileName)));
+				new File((System.getProperty("user.dir") + "/target/Reports/" + dateOnly() + "/" + fileName)));
 
 		extent.config().setTheme(Theme.STANDARD);
 		extent.config().setDocumentTitle(fileName);
@@ -75,6 +76,8 @@ public class BaseClass {
 		reports.setSystemInfo("Tester", "Shubham");
 		reports.setSystemInfo("BuildName", "1.01");
 		reports.setSystemInfo("Project", "");
+		
+		//Loggertest = reports.createTest("SetUp");
 	}
 
 	@BeforeTest
@@ -125,7 +128,7 @@ public class BaseClass {
 				Markup F = MarkupHelper.createLabel(failText, ExtentColor.RED);
 				Loggertest.log(Status.FAIL, F);
 
-				driver.close();
+				 driver.quit();
 				System.out.println("Close Browser After Test Case Failed");
 
 			} else if (result.getStatus() == ITestResult.SUCCESS) {
@@ -152,7 +155,11 @@ public class BaseClass {
 			
 			Loggertest.log(Status.INFO, t.fillInStackTrace());
 		}
-
+		
+		
+		driver.quit();
 	}
+	
+	
 
 }
