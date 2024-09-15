@@ -1,2 +1,5 @@
 
 /SeleniumWithJava/test-output
+/SeleniumWithJava/test-output
+*.xml
+*.html
